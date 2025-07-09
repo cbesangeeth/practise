@@ -1,35 +1,19 @@
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.stream.Collectors;
+package org.codesimple;
 
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
 public class Main {
-
     public static void main(String[] args) {
+        // Press Alt+Enter with your caret at the highlighted text to see how
+        // IntelliJ IDEA suggests fixing it.
+        System.out.printf("Hello and welcome!");
 
-        System.out.println("Hello World!");
+        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
+        for (int i = 1; i <= 5; i++) {
 
-//        System.out.println("hello injellij");
-//
-//        List<Integer> number = Arrays.asList(12,43,4,5);
-//
-//       int a = number.stream()
-//                .map(y -> y+1).sorted().
-//                reduce(2 ,(ans,i)-> ans+i);
-//
-//        System.out.print(number);
-//        System.out.print(a);
-
-        List<Integer> number = Arrays.asList(2,3,4,5);
-
-        List<String>  numberToString= number.stream().map(x -> x.toString()).collect(Collectors.toList());
-
-        numberToString.forEach(System.out::println );
-
-
-        Boolean isValid = true;
-
-        System.out.println(isValid!=null ?isValid.toString():"false");
+            // Press Shift+F9 to start debugging your code. We have set one breakpoint
+            // for you, but you can always add more by pressing Ctrl+F8.
+            System.out.println("i = " + i);
+        }
     }
-
 }
